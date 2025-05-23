@@ -1,5 +1,10 @@
 # CI/CD Docker Demo 🚀
 
+![Build](https://github.com/amedingt92/ci-cd-docker-demo/actions/workflows/main.yml/badge.svg)
+![Docker Image Size](https://img.shields.io/docker/image-size/aedingto/ci-cd-docker-demo)
+![Last Commit](https://img.shields.io/github/last-commit/amedingt92/ci-cd-docker-demo)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 This project demonstrates a CI/CD pipeline using:
 - GitHub Actions
 - Docker
@@ -49,7 +54,6 @@ python app/app.py
 ```
 
 ```yaml
-
 ---
 
 ### 📄 `.gitignore`
