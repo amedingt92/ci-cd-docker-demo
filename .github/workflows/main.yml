@@ -75,7 +75,7 @@ jobs:
           subject: GitHub Actions Pipeline - ${{ job.status }}
           to: ${{ secrets.EMAIL_USERNAME }}
           from: GitHub CI/CD <${{ secrets.EMAIL_USERNAME }}>
-          html-body: |
+          html_body: |
             <h3>CI/CD Pipeline Result</h3>
             <p><strong>Repository:</strong> ${{ github.repository }}</p>
             <p><strong>Status:</strong> ${{ job.status }}</p>
