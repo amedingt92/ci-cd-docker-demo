@@ -5,8 +5,9 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy and install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt requirements.txt
+RUN pip install --upgrade pip setuptools && \
+    pip install -r requirements.txt
 
 # Copy source code
 COPY . .
