@@ -58,8 +58,17 @@ jobs:
         with:
           image-ref: ${{ secrets.DOCKER_IMAGE }}
           format: table
-          exit-code: 0
+          output: trivy-results.md
+          exit-code: 1
           ignore-unfixed: true
+          vuln-type: 'os, library'
+          severity: 'HIGH, CRITICAL'
+
+      - name: Upload Trivy Report as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-security-scan-report
+          path: trivy-results.md
 
       - name: Push Image to Docker Hub
         run: docker push ${{ secrets.DOCKER_IMAGE }}
