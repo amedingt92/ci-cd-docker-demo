@@ -16,6 +16,18 @@ This project demonstrates a CI/CD pipeline using:
 
 ---
 
+## ✨ Features
+
+- ✅ Linting with flake8
+- ✅ Unit testing with pytest
+- ✅ Test coverage reporting
+- ✅ Dockerized Flask app
+- ✅ GitHub Actions pipeline with:
+  - Automated test + build + security scan
+  - Docker Hub push
+  - Email notifications via Gmail SMTP
+
+
 ## 🛠 Tech Stack
 - **Python 3.11**
 - **Flask**
@@ -39,7 +51,8 @@ graph TD
 
 ## 📦 Docker Image
 The image is pushed to:
-docker.io/YOUR_USERNAME/ci-cd-docker-demo
+docker.io/aedingto/ci-cd-docker-demo
+
 
 ## 🚀 Setup
 ```bash
@@ -56,7 +69,7 @@ python app/app.py
 ```yaml
 ---
 
-### 📄 `.gitignore`
+## 📄 `.gitignore`
 
 Here's a Python + Docker `.gitignore` you can drop in:
 
