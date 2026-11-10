@@ -1,0 +1,4 @@
+# pip 26.3 vendors pkg_resources from setuptools 70.3.0 and ships an SBOM saying so.
+# CVE-2025-47273 is in setuptools.package_index, which pip does not vendor (checked 2026-11-10).
+# The image's real setuptools is 84.2.1. Re-check when pip updates its vendored pkg_resources.
+CVE-2025-47273 exp:2027-02-08
